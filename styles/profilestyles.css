@@ -1,0 +1,71 @@
+/* Profile page specific styles only */
+
+.profile-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+.profile-card {
+  width: 100%; /* full width */
+  max-width: none; /* remove any restriction */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  background: #d8eaff;
+  padding: 40px;
+  border-radius: 12px;
+  margin-top: 30px;
+}
+
+.profile-photo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-photo img {
+  width: 240px;
+  height: 240px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid white;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.profile-info h1 {
+  font-size: 2rem;
+  color: #003b88;
+}
+
+.profile-info h2 {
+  margin-top: 15px;
+  color: #0057c2;
+}
+
+.profile-info .bio {
+  margin-top: 10px;
+  margin-bottom: 15px;
+  line-height: 1.6;
+  color: #333;
+}
+
+.profile-info ul {
+  margin-left: 20px;
+  line-height: 1.5;
+}
+
+/* Responsive for mobile */
+@media (max-width: 700px) {
+  .profile-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .profile-photo img {
+    width: 200px;
+    height: 200px;
+  }
+}
